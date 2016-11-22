@@ -1,0 +1,15 @@
+svg{
+	border: 1px solid purple;
+}
+
+.container-flex{
+	display: flex;
+	flex-wrap: wrap;	
+
+
+	.svg-item{
+		margin: 30px 15px;
+		flex: 1;
+	}
+}
+

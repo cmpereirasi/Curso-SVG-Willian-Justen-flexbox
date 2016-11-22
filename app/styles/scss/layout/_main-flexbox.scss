@@ -1,0 +1,124 @@
+body, html{
+	height: 100%;
+}
+#wrapper{
+	display: flex;
+	height: 100%;
+	#sidebar{
+		background: purple;
+		height: 100%;
+		width: 250px;
+		flex-direction: column;
+		ul{
+			list-style: none;
+			.username{
+				background: rgba(52, 73, 94,1.0);
+				color:  #fff;
+				text-decoration: uppercase;
+				padding: 15px;
+				font-size: 18px;
+				text-align: center;
+			}			
+			li{
+				padding: 15px;
+				text-align: left;
+				border-bottom: 1px solid rgba(155, 89, 182,1.0);
+				a{
+					color: #ffffff;
+					text-decoration: none;
+					font-size: 18px;
+				}
+				&:hover{
+					background: rgba(142, 68, 173,1.0);
+				}
+			}
+		}
+	}
+	.main-principal{
+		flex: 1;
+		.header-main{
+			flex: 1;
+			height: 57px;
+			background: purple;
+			h4{
+				font-size: 20px;
+				color: #fff;
+				line-height: 3;
+				padding-left: 10px;
+				text-align: center;
+			}
+		}
+		.main-content{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 40px; 
+			.painel-principal{
+				flex: 1;
+				border: 2px solid #eee;
+				margin: 12px 15px;
+				padding: 10px;
+				.painel-header{
+					padding: 5px;
+					border-bottom: 1px solid purple;
+					h2{
+						font-size: 20px;
+						font-style: uppercase;
+					}
+				}
+				.painel-body{
+					padding: 10px 5px;
+					text-align: justify;
+					.painel-form{
+						input{
+							flex-direction: row;
+							flex-wrap: wrap;
+							width: 100%;
+							margin-bottom: 10px;
+							padding: 10px 0 10px 6px;
+							border: 1px solid purple;
+
+						}
+						button{
+							padding: 10px 20px;
+							border-radius: 50px;
+							border: 1px solid purple;
+							background: purple;
+							color: #fff;
+							pointer: pointer
+							&:hover{
+								opacity: 1,5;
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+// #main{
+// 	background: black;
+// 	width: 100%;
+// 	height: 500px;
+// 	display: flex;
+// 	flex-direction: row;
+// 	align-items: flex-start;
+// 	justify-content: center;
+// 	 div{
+// 		width: 200px;
+// 		height: 100px;
+// 		background: yellow;
+// 		border: 1px solid orange;
+
+// 	 }	
+// 	 div:nth-child(2){
+// 		//flex-grow: 4;
+// 		background: orange;
+// 		align-self: flex-end;
+// 	 }
+
+// 	 div:nth-child(1){
+// 		//flex-grow: 5;
+// 		background: purple;
+// 	 }
+// }
